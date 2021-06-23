@@ -28,12 +28,16 @@ upper and lowercase letters as equivalent. Examples:
   appears twice (once uppercase, once lowercase).
 
 ## Run the program
-
 * Python Execution
 
-To run the program in terminal, say
+To run the program in terminal,
+1. In Windows, say
 
-    python domletter-count.py input.txt
+        python domletter-count.py input.txt
+
+2. In Linux, say
+
+        python3 domletter-count.py input.txt
 
 where `input.txt` is the input file to be processed.
 
