@@ -1,0 +1,4 @@
+This is an example text file named "example.txt" file.
+which contains some number of line of string's separated by " " (space) and "\n" (new line) .
+
+This is to test DomLetter code written in python for "CS561 Open Source Software Development" course.

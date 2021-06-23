@@ -1,9 +1,9 @@
 # domletters — count dominant letters
-<Your Name> and Bart Massey 2021
+Sree Vandana Nadipalli and Bart Massey 2021
 
 This repository contains a program that counts dominant
-letters in alphabetic words of an ASCII text read from
-standard input, printing the total count on standard output.
+letters in alphabetic words of an ASCII text, present in a '.txt' file. The file name is read from
+standard input, and total count is printed on standard output.
 
 An "alphabetic word" is any sequence of one or more
 ASCII letters (`a`-`z` and/or `A`-`Z`) surrounded by
@@ -27,41 +27,21 @@ upper and lowercase letters as equivalent. Examples:
 * The dominant letter count of `Arable` is 2, since `a`
   appears twice (once uppercase, once lowercase).
 
-## Build and Run
+## Run the program
 
-(*These instructions are for a compiled language like
-C++. For an interpreted language like Python, delete these
-instructions and use those below.*)
+* Python Execution
 
-To build the program, type `make`. This will use the file
-named `Makefile` to compile the program.
+To run the program in terminal, say
 
-To run the program once it is built, say
-
-    ./domletters <input.txt
-
-where `input.txt` is the input file to be processed.
-
-## Build and Run
-
-(*These instructions are for an interpreted language like
-Python. For a compiled language like C++, delete these
-instructions and use those above. Note that your script
-should be marked executable and set up to run on a Linux box
-using a standard interpreter: for example, in Python the
-first line should be something like `#!/usr/bin/python3`.*)
-
-To run the program, say
-
-    ./domletters <input.txt
+    python domletter-count.py input.txt
 
 where `input.txt` is the input file to be processed.
 
 ## Example
 
 When run using the file `sentence.txt` in this distribution,
-the program will produce a dominant letter count of 20. When
-run on `swift.txt` it will produce 71.
+the program will produce a dominant letter count of **20**. When
+run on `swift.txt` it will produce **71**. When run on `example.txt` it will produce **38**.
 
 ## Acknowledgements
 
