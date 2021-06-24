@@ -17,14 +17,13 @@ def get_dom_count(word):
 
 
 if __name__ == "__main__":
+    count = 0
     for line in sys.stdin:
-        stringWords = line.rstrip('\n').lower()
+        stringWords = line.lower()
         words = re.split('[\n\\s]', stringWords)
-        count = 0
         for i in range(len(words)):
             if len(words[i]) > 0:
                 if words[i].isalpha():  # https://www.geeksforgeeks.org/python-string-isalpha-application/
                     count = count + get_dom_count(words[i])
 
-        print("Total dominant letters Count: ", count)
-        break
+    print("Total dominant letters Count: ", count)
