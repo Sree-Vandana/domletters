@@ -18,7 +18,7 @@ def get_dom_count(word):
 
 if __name__ == "__main__":
     for line in sys.stdin:
-        stringWords = open(line.rstrip('\n'), 'r').read().lower()
+        stringWords = line.rstrip('\n').lower()
         words = re.split('[\n\\s]', stringWords)
         count = 0
         for i in range(len(words)):
