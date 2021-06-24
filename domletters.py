@@ -16,7 +16,7 @@ def get_dom_count(word):
     return max(letterCountDict.values())
 
 
-file_name = input("Please enter the file name containing ASCII text. (Eg: example.txt)\n")
+file_name = input()
 stringWords = open(file_name, 'r').read().lower()
 words = re.split('[\n\s]', stringWords)
 count = 0
