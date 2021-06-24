@@ -27,17 +27,11 @@ upper and lowercase letters as equivalent. Examples:
 * The dominant letter count of `Arable` is 2, since `a`
   appears twice (once uppercase, once lowercase).
 
-## Run the program
-* Python Execution
+## Build and Run
 
-To run the program in terminal,
-1. In Windows, say
+To run the program, say
 
-        python domletter-count.py input.txt
-
-2. In Linux, say
-
-        python3 domletter-count.py input.txt
+            ./domletters <input.txt
 
 where `input.txt` is the input file to be processed.
 
@@ -45,7 +39,7 @@ where `input.txt` is the input file to be processed.
 
 When run using the file `sentence.txt` in this distribution,
 the program will produce a dominant letter count of **20**. When
-run on `swift.txt` it will produce **71**. When run on `example.txt` it will produce **38**.
+run on `swift.txt` it will produce **71**. When run on `input.txt` it will produce **38**.
 
 ## Acknowledgements
 
