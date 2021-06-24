@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import re
 import sys
+import re
 
 
 def get_dom_count(word):
@@ -16,13 +16,15 @@ def get_dom_count(word):
     return max(letterCountDict.values())
 
 
-file_name = input()
-stringWords = open(file_name, 'r').read().lower()
-words = re.split('[\n\s]', stringWords)
-count = 0
-for i in range(len(words)):
-    if len(words[i]) > 0:
-        if words[i].isalpha():  # https://www.geeksforgeeks.org/python-string-isalpha-application/
-            count = count + get_dom_count(words[i])
+if __name__ == "__main__":
+    for line in sys.stdin:
+        stringWords = open(line.rstrip('\n'), 'r').read().lower()
+        words = re.split('[\n\\s]', stringWords)
+        count = 0
+        for i in range(len(words)):
+            if len(words[i]) > 0:
+                if words[i].isalpha():  # https://www.geeksforgeeks.org/python-string-isalpha-application/
+                    count = count + get_dom_count(words[i])
 
-print("Total dominant letters Count: ", count)
+        print("Total dominant letters Count: ", count)
+        break
