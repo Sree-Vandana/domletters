@@ -18,7 +18,7 @@ def get_dom_count(word):
 
 if __name__ == "__main__":
     count = 0
-    for line in sys.stdin:
+    for line in sys.stdin:         # changed from input() to sys.stdin (Got this Idea from Zulip HW1 thread discussions)
         stringWords = line.lower()
         words = re.split('[\n\\s]', stringWords)
         for i in range(len(words)):
